@@ -11,11 +11,11 @@ public class AddDemo extends HttpServlet {
 
 	public void doPost(HttpServletRequest req,HttpServletResponse res) throws IOException {
 		
-		int a=Integer.parseInt(req.getParameter("num1"));
-		int b=Integer.parseInt(req.getParameter("num2"));
-		int c=a+b;
-		PrintWriter p=res.getWriter();
-		p.println("result is "+c);
+		int number1=Integer.parseInt(req.getParameter("num1"));
+		int number2=Integer.parseInt(req.getParameter("num2"));
+		int add=number1+number2;
+		PrintWriter printwriter=res.getWriter();
+		printwriter.println("result is "+add);
 		
 	
 	
